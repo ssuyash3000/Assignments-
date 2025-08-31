@@ -121,6 +121,11 @@ class BST{
             else if(s==e){
                 return new BST_NODE(input[s]);
             }else{
+                while (s < e && input[s].word == input[s+1].word) {
+                    cout << input[s].word << " is duplicate and will be skipped.\n";
+                    s++;
+                }
+
                 int mid = s + (e-s)/2;
                 BST_NODE* node = new BST_NODE(input[mid]);
                 node->left = insertSortedArrayHelper(input, s, mid - 1);
