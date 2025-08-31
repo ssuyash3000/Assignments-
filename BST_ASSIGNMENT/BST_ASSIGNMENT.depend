@@ -1,0 +1,14 @@
+# depslib dependency file v1.0
+1756625646 source:c:\users\suyash-pc\desktop\bst_assignment\bst_assignment\dictionary_data.cpp
+	"dictionary.h"
+
+1756625649 c:\users\suyash-pc\desktop\bst_assignment\bst_assignment\dictionary.h
+	<iostream>
+	<string>
+	<vector>
+
+1756623539 source:c:\users\suyash-pc\desktop\bst_assignment\bst_assignment\main.cpp
+	<iostream>
+	<vector>
+	"dictionary.h"
+
