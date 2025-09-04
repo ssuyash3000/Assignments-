@@ -23,8 +23,11 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="dictionary.h" />
+		<Unit filename="Word_BST.cpp" />
+		<Unit filename="Word_BST.h" />
 		<Unit filename="dictionary_data.cpp" />
+		<Unit filename="letter_BST.cpp" />
+		<Unit filename="letter_BST.h" />
 		<Unit filename="main.cpp" />
 		<Extensions />
 	</Project>

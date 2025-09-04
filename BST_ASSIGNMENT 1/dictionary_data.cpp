@@ -1,7 +1,7 @@
-#include "dictionary.h"
+#include "Word_BST.h"
 // This is the actual implementation of the getDictionary function that was
 // declared in the .h file. Its job is to create and return the vector of words.
-vector<Word> getDictionary() {
+vector<Word> getDictionaryData() {
     vector<Word> dictionary = {
 //        Word("AA", "A medieval chemical science aiming to transmute base metals into gold."),
 //        Word("BB", "A medieval chemical science aiming to transmute base metals into gold."),
