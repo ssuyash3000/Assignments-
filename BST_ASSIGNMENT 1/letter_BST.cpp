@@ -45,7 +45,7 @@ Letter_BST_NODE* Letter_BST::deleteHelper(char input, Letter_BST_NODE* searchNod
         searchNode->left = deleteHelper(input, searchNode->left);
     }
     else{
-        cout << "/////////////////////////Testing///////////////////////////////\n";
+        cout << "\n/////////////////////////Testing///////////////////////////////\n";
         if(searchNode->left == nullptr and searchNode->right == nullptr){
             delete searchNode;
             return nullptr;

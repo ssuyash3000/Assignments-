@@ -25,6 +25,17 @@ public:
         }
 
     }
+    void insertSortedWords(vector<Word> arr, int s, int e){
+//        int s = 0;
+//        int e = arr.size()-1;
+        if(s > e){
+            return;
+        }
+        int mid = s + (e-s)/2;
+        insertWord(arr[mid]);
+        insertSortedWords(arr, s, mid-1);
+        insertSortedWords(arr, mid + 1, e);
+    }
     void searchWord(string input){
         Letter_BST_NODE* letterNode = root->searchKey(input[0]);
         if(letterNode == nullptr or letterNode->rootWord == nullptr){
@@ -51,11 +62,11 @@ int main()
 {
     vector<Word> v = getDictionaryData();
     TreeDictionary myDictionaryTree = TreeDictionary();
-    for(auto i : v){
-        myDictionaryTree.insertWord(i);
-
-    }
-
+//    for(auto i : v){
+//        myDictionaryTree.insertWord(i);
+//
+//    }
+    myDictionaryTree.insertSortedWords(v, 0, v.size()-1);
     myDictionaryTree.searchWord("Wane");
     myDictionaryTree.deleteWord("Wane");
     myDictionaryTree.searchWord("Wane");
